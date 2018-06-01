@@ -1,0 +1,30 @@
+@import "resets";
+@import "vars";
+@import "navbar";
+@import "inc";
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import '../../../node_modules/font-awesome/scss/_variables.scss';
+$fa-font-path: "~font-awesome/fonts";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+
+.row {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    .sidebar {
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        background: $black2;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        background-color: $black1;
+        padding-left: 60px;
+    }
+}

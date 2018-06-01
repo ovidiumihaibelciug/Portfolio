@@ -1,0 +1,30 @@
+#navbar { 
+    height: 100%;
+    display: grid;
+    grid-template-rows: 25% 50% auto;
+    .navbar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &.navbar-mid {
+            display: flex;
+            flex-direction: column;
+            .item {
+                flex: 1;
+                color: $blue;
+                font-size: 1.5rem; 
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+                * {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    
+}
