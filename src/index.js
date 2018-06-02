@@ -1,7 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Route, HashRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+import './assets/scss/App.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import createBrowserHistory from "history/createBrowserHistory";
+import { routes } from './routes'
+
+const history = createBrowserHistory();
+
+
+ReactDOM.render(
+    <HashRouter history={history}>
+        <React.Fragment>
+            {routes.map(route => (
+            <Route exact path={route.path} component={route.component} />
+            ))}
+        </React.Fragment>
+    </HashRouter>, document.getElementById('root')
+);
 registerServiceWorker();

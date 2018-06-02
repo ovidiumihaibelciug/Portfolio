@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar/Navbar';
+import Navbar from '../../components/navbar/Navbar';
 
-import './assets/scss/App.css';
 
-class App extends Component {
+class Home extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="App Home">
                 <div className="row">
                     <div className="sidebar">
                         <Navbar />
@@ -20,4 +19,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Home;

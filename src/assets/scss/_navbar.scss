@@ -2,6 +2,9 @@
     height: 100%;
     display: grid;
     grid-template-rows: 25% 50% auto;
+    -webkit-box-shadow: 4px 1px 22px -3px rgba(0,0,0,.35);
+    -moz-box-shadow: 4px 1px 22px -3px rgba(0,0,0,.35);
+    box-shadow: 4px 1px 22px -3px rgba(0,0,0,.35);
     .navbar-item {
         display: flex;
         justify-content: center;
@@ -12,11 +15,27 @@
             flex-direction: column;
             .item {
                 flex: 1;
-                color: $blue;
-                font-size: 1.5rem; 
                 width: 100%;
                 position: relative;
                 cursor: pointer;
+                &:hover {
+                    .navbar-icon {
+                        color: $blue !important;
+                    }
+                }
+                .navbar-icon {
+                    font-size: 1.5rem;
+                    color: $black3;
+                    &:active {
+                        color: $blue;
+                    }
+                }
+                .item-text {
+                    font-size: .9rem;
+                    text-transform: uppercase;
+                    border: none;
+                    color: $blue;
+                }
                 * {
                     position: absolute;
                     top: 50%;
@@ -25,6 +44,18 @@
                 }
             }
         }
+        &.navbar-bot {
+            display: flex;
+            flex-direction: column;
+            .social-item {
+                padding: 5px;
+                margin-top: 5px;
+                color: $black3 !important;
+                &:hover {
+                    color: $blue !important;
+                    cursor: pointer;
+                }
+            }
+        }
     }
-    
 }

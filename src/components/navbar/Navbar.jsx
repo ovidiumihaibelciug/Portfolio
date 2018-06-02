@@ -35,11 +35,38 @@ export default class Navbar extends Component {
                         <i className="navbar-icon centered fa fa-home" data-item="2"></i>
                         <div className="item-text hide" data-item="2">asd</div>
                     </div>
-                    <div className="item"></div>
-                    <div className="item"></div>
+                    <div className="item" data-item="3" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-home" data-item="3"></i>
+                        <div className="item-text hide" data-item="3">asd</div>
+                    </div>
+                    <div className="item" data-item="4" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-home" data-item="4"></i>
+                        <div className="item-text hide" data-item="4">asd</div>
+                    </div>
+                    <div className="item" data-item="5" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-home" data-item="5"></i>
+                        <div className="item-text hide" data-item="5">asd</div>
+                    </div>
                 </div>
                 <div className="navbar-item navbar-bot">
-                    cc
+                    <a href="">
+                        <div className="social-item">
+                            <i className="fa fa-facebook">
+                            </i>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div className="social-item">
+                            <i className="fa fa-facebook">
+                            </i>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div className="social-item">
+                            <i className="fa fa-facebook">
+                            </i>
+                        </div>
+                    </a>
                 </div>
             </section>
         )
