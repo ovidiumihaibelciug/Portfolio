@@ -10,9 +10,11 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        z-index: 10;
         &.navbar-mid {
             display: flex;
             flex-direction: column;
+            z-index: 10;            
             .item {
                 flex: 1;
                 width: 100%;
@@ -58,4 +60,7 @@
             }
         }
     }
+}
+.sidebar {
+    z-index: 4;
 }
