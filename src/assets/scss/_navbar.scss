@@ -33,7 +33,7 @@
                     }
                 }
                 .item-text {
-                    font-size: .9rem;
+                    font-size: .7rem;
                     text-transform: uppercase;
                     border: none;
                     color: $blue;
@@ -43,6 +43,21 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                }
+                &.actve-item {
+                    position: relative;
+                    i {
+                        font-size: 1.4em;
+                        width: 1.8em;
+                        text-align: center;
+                        line-height: 1.8em;
+                        background: #007ab7;
+                        color: #fff;
+                        border-radius: 0.8em; /* or 50% width & line-height */
+                        -webkit-box-shadow: 0px 8px 26px -6px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 8px 26px -6px rgba(0,0,0,0.75);
+                        box-shadow: 0px 8px 26px -6px rgba(0,0,0,0.75);
+                    }
                 }
             }
         }

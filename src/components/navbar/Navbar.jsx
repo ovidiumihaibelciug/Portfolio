@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default class Navbar extends Component {
 
@@ -27,26 +28,26 @@ export default class Navbar extends Component {
                     aa
                 </div>
                 <div className="navbar-item navbar-mid">
-                    <div className="item" data-item="1" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                    <NavLink to={'/home'} exact={true} activeClassName='actve-item' className="item" data-item="1" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
                         <i className="navbar-icon centered fa fa-home" data-item="1"></i>
-                        <div className="item-text hide" data-item="1">asd</div>
-                    </div>
-                    <div className="item" data-item="2" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
-                        <i className="navbar-icon centered fa fa-home" data-item="2"></i>
-                        <div className="item-text hide" data-item="2">asd</div>
-                    </div>
-                    <div className="item" data-item="3" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
-                        <i className="navbar-icon centered fa fa-home" data-item="3"></i>
-                        <div className="item-text hide" data-item="3">asd</div>
-                    </div>
-                    <div className="item" data-item="4" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <div className="item-text hide" data-item="1">Home</div>
+                    </NavLink>
+                    <NavLink to={'/about'} exact={true} activeClassName='actve-item' className="item" data-item="2" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-user" data-item="2"></i>
+                        <div className="item-text hide" data-item="2">About</div>
+                    </NavLink>
+                    <NavLink to={'/skills'} exact={true} activeClassName='actve-item' className="item" data-item="3" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-cog" data-item="3"></i>
+                        <div className="item-text hide" data-item="3">Skills</div>
+                    </NavLink>
+                    <NavLink to={''} exact={true} activeClassName='actve-item' className="item" data-item="4" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
                         <i className="navbar-icon centered fa fa-home" data-item="4"></i>
                         <div className="item-text hide" data-item="4">asd</div>
-                    </div>
-                    <div className="item" data-item="5" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                    </NavLink>
+                    <NavLink to={''} exact={true} activeClassName='actve-item' className="item" data-item="5" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
                         <i className="navbar-icon centered fa fa-home" data-item="5"></i>
                         <div className="item-text hide" data-item="5">asd</div>
-                    </div>
+                    </NavLink>
                 </div>
                 <div className="navbar-item navbar-bot">
                     <a href="">

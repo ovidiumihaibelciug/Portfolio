@@ -4,6 +4,7 @@
 @import "navbar";
 @import "inc";
 @import "home";
+@import "about";
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -12,6 +13,10 @@
 @import '../../../node_modules/font-awesome/scss/_variables.scss';
 $fa-font-path: "~font-awesome/fonts";
 @import "../../../node_modules/font-awesome/scss/font-awesome";
+
+body {
+    background-color: $black1;
+}
 
 .App {
     overflow: hidden;
@@ -22,7 +27,7 @@ $fa-font-path: "~font-awesome/fonts";
         .sidebar {
             position: absolute;
             width: 60px;
-            height: 100%;
+            height: 100vh;
             background: $black2;
         }
         .content {

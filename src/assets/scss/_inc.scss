@@ -15,6 +15,11 @@
     cursor: default;
     opacity: .7;
     z-index: 2;
+    width: 22ch;
+    overflow: hidden;
+    animation-fill-mode: both;
+    display: none;
+    animation: type 5s steps(22) forwards, type_blink .2s infinite;    
     &.tag-render {
         top: 7%;
     }
@@ -30,6 +35,27 @@
         bottom: 7%;
     }
     
+}
+
+
+@keyframes type {
+    0% {
+        width: 0ch;
+        border-right: 3px solid $black4;  
+    }
+    100% {
+        width: 22ch;
+        border: none;
+    }
+}
+
+@keyframes type_blink {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
 }
 
 .centered {

@@ -17,6 +17,12 @@ class Home extends Component {
             img.classList.remove('hide');
             svg.classList.add('hide');
         }, 2000)
+        const tags = document.querySelectorAll('.tag');
+        [...tags].map(tag => {
+            setTimeout(() => {
+                tag.style.display = "block";
+            }, tag.dataset.hide);
+        })
     }
 
     render() {
@@ -93,8 +99,8 @@ class Home extends Component {
                             <Navbar />
                         </div>
                         <div className="content">
-                            <span className="tag tag-render">{"render() {"}</span> <br />
-                            <span className="tag tag-fragment-start">{"<Fragment>"}</span>
+                            <span data-hide="10" className="tag tag-render">{"render() {"}</span> <br />
+                            <span data-hide="4000" className="tag tag-fragment-start">{"<Fragment>"}</span>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-6 main-home">
@@ -118,8 +124,8 @@ class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <span className="tag tag-fragment-end">{"</Fragment>"}</span>
-                            <span className="tag tag-render-end">{"}"}</span>
+                            <span data-hide="8000" className="tag tag-fragment-end">{"</Fragment>"}</span>
+                            <span data-hide="12000" className="tag tag-render-end">{"}"}</span>
                         </div>
                     </div>
                 </div>
