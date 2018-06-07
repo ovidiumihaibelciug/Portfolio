@@ -69,8 +69,15 @@
     }
 }
 
-.About {
-    html {
-        overflow: hidden;
-    }
+
+#test {
+    padding: 10px;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.CircularProgressbar {
+    transform: scale(.5);
 }
