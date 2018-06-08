@@ -105,7 +105,7 @@ class Home extends Component {
                                 <div className="row">
                                     <div className="col-md-6 main-home">
                                         <div className="text-name">
-                                            Hello,<br /> I'm <span className="text-username">Ovi</span>diu-Mihai Belciug,<br /> Web Developer.
+                                            Hello,<br /> I'm <span className="text-username">Ovi</span>diu-Mihai Belciug,<br /> Jr. Web Developer.
                                         </div>
                                         <div className="text-title">
                                             React / Laravel / Vue

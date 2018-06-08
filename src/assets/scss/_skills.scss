@@ -33,12 +33,6 @@
                     .skill-label {
                         display: flex;
                         justify-content: space-between;
-                        .skill-name {
-                            
-                        }
-                        .skill-percent {
-                            
-                        }
                     }
                     .skill-bar {
                         flex: 4;
@@ -72,6 +66,47 @@
     }
 }
 
+
+.skill-points {
+    margin-top: 100vh;
+}
+
+.skill-text-tag {
+    opacity: 0;
+    color: white;
+    animation: test linear infinite 4s;    
+    letter-spacing: 1px;
+    margin: 5px;
+    font-style: italic !important;
+    font-family: sans-serif;
+}
+
+.skill-text-anim {
+    // text-shadow: rgb(30, 242, 241) 2.54531px 0px 1px, rgb(246, 5, 10) -2.54531px 0px 1px;
+    color: white;
+    animation: test linear infinite 3s;
+}
+
+@keyframes test{
+    0% {
+        text-shadow: 0px;
+        letter-spacing: 1px
+    }
+    30% {
+        text-shadow: 0;
+    }
+    50% {
+        text-shadow: rgb(30, 242, 241) 4px 0px 1px, rgb(246, 5, 10) -4px 0px 1px;
+        letter-spacing: 2px;
+    }
+    70% {
+        text-shadow: 0; 
+        letter-spacing: 1px;
+    }
+    100% {
+        text-shadow: 0;
+    }
+}
 
 *,
 *:before,
@@ -166,4 +201,74 @@
 .pie-wrapper.progress-95 .pie .left-side {
   -webkit-transform: rotate(342deg);
           transform: rotate(342deg);
+}
+
+
+
+
+
+h1 {
+	font-size: 3rem;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.app-outer {
+	align-items: center; 
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	padding: 20px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.app-inner {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.tag-cloud {
+	flex: 1;
+}
+
+.tag-cloud > div {
+	transition: 1.4s;
+}
+
+.tag-item-wrapper {
+	cursor: pointer;
+}
+
+.tag-item-wrapper:hover {
+	z-index: 100;
+}
+
+.tag-item-wrapper:hover .tag-item-tooltip {
+	display: block;
+}
+
+.tag-item-tooltip {
+	background: #c01916;
+	color: white;
+	margin-top: 5px;
+  z-index: 100;
+  display: none;
+	padding: 15px;
+	font-size: 14px;
+	line-height: 1;
+	position: absolute;
+	min-width: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+  text-align: center;
 }
