@@ -40,9 +40,9 @@ export default class Navbar extends Component {
                         <i className="navbar-icon centered fa fa-cog" data-item="3"></i>
                         <div className="item-text hide" data-item="3">Skills</div>
                     </NavLink>
-                    <NavLink to={''} exact={true} activeClassName='actve-item' className="item" data-item="4" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
-                        <i className="navbar-icon centered fa fa-home" data-item="4"></i>
-                        <div className="item-text hide" data-item="4">asd</div>
+                    <NavLink to={'/experience'} exact={true} activeClassName='actve-item' className="item" data-item="4" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-line-chart" data-item="4"></i>
+                        <div className="item-text hide" data-item="4">Experience</div>
                     </NavLink>
                     <NavLink to={''} exact={true} activeClassName='actve-item' className="item" data-item="5" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
                         <i className="navbar-icon centered fa fa-home" data-item="5"></i>

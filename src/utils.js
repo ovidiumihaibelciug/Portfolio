@@ -159,4 +159,14 @@ export const sskills = [
         name: 'SCSS',
         imp: 2
     },
+    {
+        id: 33,
+        name: 'MVC',
+        imp: 3
+    },
+    {
+        id: 34,
+        name: 'OOP',
+        imp: 3
+    },
 ]

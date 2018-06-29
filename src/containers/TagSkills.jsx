@@ -65,8 +65,7 @@ export default class TagSkills extends Component {
                                     if (!id % 7) {
                                         style.fontFamily = 'courier';
                                     }
-                                    console.log(style);
-                                    return <div className="skill-text-tag" style={style}>{name}</div>
+                                    return <div className="skill-text-tag" offset={id} style={style}>{name}</div>
                                 })
                             }
                         </TagCloud>

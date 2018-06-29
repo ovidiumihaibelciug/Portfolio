@@ -1,0 +1,72 @@
+.Experience {
+    .content {
+        margin-top: 10%;
+        .evolution {
+            display: grid;
+            grid-template-rows: 30% 70%;
+            height: auto;
+            .evolution-title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+                font-size: 2.3rem;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                color: white;
+                letter-spacing: .01px;;
+            }
+            .evolution-body {
+                display: flex;
+                justify-content: center;
+                .exp-circle {
+                    padding: 5px;
+                    background-color: #323232;
+                    border-radius: 50%;
+                    height: 17px;
+                    width: 17px;
+                    margin-top: 15px;
+                    margin-left: 12px;
+                }
+                .exp-period {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 10%;
+                    margin-left: 12px;
+                    height: 100%;
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        i {
+                            width: auto;
+                            color: white;
+                            font-size: 1.6rem;
+                            border: 1px solid $black4;
+                            border-radius: 50%;
+                            padding: 15px;
+                        }
+                    }
+                    .exp-period-details {
+                        width: auto;
+                        .year {
+                            margin-top: 20px;
+                            text-align: center;
+                            color: white;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            font-family: 'Montserrat';
+                        }
+                        .text {
+                            text-align: center;
+                            margin-top: 10px;
+                            font-size: .9rem;
+                            color: $black3;
+                            font-family: Roboto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
