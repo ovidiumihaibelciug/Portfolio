@@ -48,6 +48,10 @@ export default class Navbar extends Component {
                         <i className="navbar-icon centered fa fa-star" data-item="5"></i>
                         <div className="item-text hide" data-item="5">Projects</div>
                     </NavLink>
+                    <NavLink to={'/contact'} exact={true} activeClassName='actve-item' className="item" data-item="6" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <i className="navbar-icon centered fa fa-comment" data-item="6"></i>
+                        <div className="item-text hide" data-item="6">Contact</div>
+                    </NavLink>
                 </div>
                 <div className="navbar-item navbar-bot">
                     <a href="">

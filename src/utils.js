@@ -169,4 +169,17 @@ export const sskills = [
         name: 'OOP',
         imp: 3
     },
+];
+
+export const projects = [
+    {
+       id: 1,
+       title: "Lorem ipsum, dolor situm",
+       text: "Lorem ipsum, dolor situm asd asda sad awqe qasd asdasd as das dasd" 
+    },
+    {
+       id: 2,
+       title: "Lorem ipsum, dolor situm",
+       text: "Lorem ipsum, dolor situm asd asda sad awqe qasd asdasd as das dasd" 
+    },
 ]

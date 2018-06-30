@@ -1,0 +1,149 @@
+.Projects {
+    width: 100vw;
+    height: 100vh;
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .projects-list {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .project {
+                height: 70vh;
+                width: 60vw;
+                background-color: rgba($color: $blue, $alpha: .5);
+                display: flex;
+                padding: 3% 0 3% 7%;
+                .project-leftside {
+                    flex: 3;
+                    margin-right: 40px;
+                    // padding-right: 50px;
+                    display: grid;
+                    grid-template-rows: 25% 15% 40% auto;
+                    .project-id {
+                        font-size: 6rem;
+                        color: white;
+                        font-weight: bold;
+                        font-family: "Roboto Condensed" ,"Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                    .project-title {
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            border: 2px solid white;
+                            width: 30px;
+                            background-color: white;
+                            position: absolute;
+                            top: 1.9rem;
+                            left: 1px;
+                        }
+                    }
+                    .project-text {
+                        color: rgba(255, 255, 255, .5);
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        font-size: .9rem;
+                        line-height: 1.8rem;
+                        text-indent: 5px;
+                    }
+                    .project-tags {
+                            list-style: none;
+                            margin: 0;
+                            overflow: hidden; 
+                            padding: 0;
+                          
+                          
+                          
+                          
+                          .project-tag {
+                            background: #eee;
+                            border-radius: 3px 0 0 3px;
+                            color: #999;
+                            display: inline-block;
+                            height: 26px;
+                            line-height: 26px;
+                            padding: 0 20px 0 23px;
+                            position: relative;
+                            margin: 0 10px 10px 0;
+                            text-decoration: none;
+                            -webkit-transition: color 0.2s;
+                          }
+                          
+                          .project-tag::before {
+                            background: #146994;
+                            border-radius: 10px;
+                            box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+                            content: '';
+                            height: 6px;
+                            left: 10px;
+                            position: absolute;
+                            width: 6px;
+                            top: 10px;
+                          }
+                          
+                          .project-tag::after {
+                            background: #146994;
+                            border-bottom: 13px solid transparent;
+                            border-left: 10px solid #eee;
+                            border-top: 13px solid transparent;
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                          }
+                          
+                          .project-tag:hover {
+                            background-color: $blue;
+                            color: white;
+                          }
+                          
+                          .project-tag:hover::after {
+                             border-left-color: $blue; 
+                          }
+                    }
+                }
+                .project-rightside {
+                    flex: 2;
+                    position: relative;
+                    .project-image {
+                        position: absolute;
+                        height: 70%;
+                        width: calc(100% + 50px);
+                        background-image: url('../images/education.jpg');
+                        background-position: center center;
+                        background-size: cover;
+                        top: calc(-50px - 7%);
+                        left: 1px;
+                        border: 5px solid white;
+                    }
+                    .project-arrows {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 50px;
+                        display: flex;
+                        .arrow-left, .arrow-right {
+                            .fa {
+                                padding: 10px;
+                                color: #146994;
+                                background-color: white;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: $blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
