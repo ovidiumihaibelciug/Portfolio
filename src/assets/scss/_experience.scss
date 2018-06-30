@@ -1,21 +1,10 @@
 .Experience {
     .content {
-        margin-top: 10%;
+        margin-top: 4%;
         .evolution {
             display: grid;
             grid-template-rows: 30% 70%;
             height: auto;
-            .evolution-title {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 50px;
-                font-size: 2.3rem;
-                text-transform: uppercase;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-weight: bold;
-                color: white;
-                letter-spacing: .01px;;
-            }
             .evolution-body {
                 display: flex;
                 justify-content: center;
@@ -67,6 +56,116 @@
                     }
                 }
             }
+        }
+        .evolution, .education, .awards {
+            .title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                font-size: 2.3rem;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                color: white;
+                letter-spacing: .01px;;
+            }
+        }
+        .education {
+            .education-body {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .education-box {
+                    margin-top: 30px;
+                    width: 80%;
+                    height: 200px;
+                    background-color: #303030;
+                    display: grid;
+                    grid-template-columns: 20% auto;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;                    
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: all .2s ease-in-out;
+                        .e-title {
+                            color: $blue !important;
+                            transition: color .7s ease-in-out;
+                            
+                        }
+                    } 
+                    .education-left-side {
+                        background-image: url('../images/education.jpg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        opacity: .7;
+                    }
+
+                    .education-right-side {
+                        height: 100%;
+                        display: grid;
+                        grid-template-rows: 40% auto;
+                                              
+                        .e-title {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            color: rgba($color: #000000, $alpha: .7);
+                        }
+                        .e-content {
+                            display: flex;
+                            justify-content: center;
+                            color: $black4;
+                            font-weight: 100;
+                            letter-spacing: 1px;
+                            font-size: .9rem;
+                            text-indent: 5px;
+                            margin: 0 20px;
+                            line-height: 1.2rem;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        .awards {
+            .awards-body {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .awards-box {
+                    margin-top: 30px;
+                    width: 80%;
+                    height: 200px;
+                    background-color: #303030;
+                    display: grid;
+                    grid-template-columns: 20% auto;
+                    cursor: pointer;
+                    &:last-child {
+                        margin-bottom: 100px;
+                    }
+                    .awards-left-side {
+                        background-image: url('../images/education.jpg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        opacity: .7;
+                        .fa {
+                            font-size: 3rem;
+                            margin-left: -1.5rem !important;
+                            margin-top: -1.5rem !important;
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        
         }
     }
 }

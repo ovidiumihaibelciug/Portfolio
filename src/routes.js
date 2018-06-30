@@ -2,6 +2,7 @@ import Home from './containers/views/Home';
 import About from './containers/views/About';
 import Skills from './containers/views/Skills';
 import Experience from './containers/views/Experience';
+import Projects from './containers/views/Projects';
 
 export const routes = [
     {
@@ -19,6 +20,10 @@ export const routes = [
     {
         path: '/experience',
         component: Experience
+    },
+    {
+        path: '/projects',
+        component: Projects
     },
     {
         path: '/',
