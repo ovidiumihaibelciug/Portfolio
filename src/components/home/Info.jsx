@@ -1,18 +1,19 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Info = () => {
     return (
-        <div>
+        <React.Fragment>
             <div className="text-name">
                 Hello,<br /> I'm <span className="text-username">Ovi</span>diu-Mihai Belciug,<br /> Web Developer.
-        </div>
+            </div>
             <div className="text-title">
                 React / Laravel / Vue
-        </div>
-            <div className="contact-btn">
-                <a href="">Contact me</a>
             </div>
-        </div>
+            <div className="contact-btn">
+                <Link to="/contact">Contact me</Link>
+            </div>
+        </React.Fragment>
     )
 }
 
