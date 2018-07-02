@@ -13,7 +13,6 @@ import Skill from '../../components/skills/Skill';
 export default class Skills extends Component {
 
     componentDidMount() {
-
         setInterval(() => {
             this.forceUpdate();
         }, 5000);
