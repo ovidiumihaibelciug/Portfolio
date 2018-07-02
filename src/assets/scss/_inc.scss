@@ -2,6 +2,12 @@
 //     margin-top: $margin !important;
 // }
 
+.pointer {
+    color: $blue;
+    transform: scale(5) translateY(-50%);
+    margin-left: -5px;
+
+}
 
 .tag {
     color: $black4;

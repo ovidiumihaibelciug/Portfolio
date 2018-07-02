@@ -3,6 +3,7 @@ import About from './containers/views/About';
 import Skills from './containers/views/Skills';
 import Experience from './containers/views/Experience';
 import Projects from './containers/views/Projects';
+import Contact from './containers/views/Contact';
 
 export const routes = [
     {
@@ -24,6 +25,10 @@ export const routes = [
     {
         path: '/projects',
         component: Projects
+    },
+    {
+        path: '/contact',
+        component: Contact
     },
     {
         path: '/',
