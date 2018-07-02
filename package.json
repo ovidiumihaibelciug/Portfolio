@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^3.6.1",
     "animejs": "^2.2.0",
     "font-awesome": "^4.7.0",
     "google-map-react": "^1.0.5",
@@ -12,6 +13,7 @@
     "progressbar.js": "^1.0.1",
     "randomcolor": "^0.5.3",
     "react": "^16.4.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-circular-multi-progressbar": "^0.6.5",
     "react-circular-progressbar": "^0.8.0",
     "react-dom": "^16.4.0",

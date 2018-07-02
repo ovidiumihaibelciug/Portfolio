@@ -9,6 +9,57 @@
 
 }
 
+#loader-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #loader {
+        height: 150px;
+        width: 100px;
+        background-image: url('../images//LOGO.png');
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        animation: loadingRot infinite 5s ease-in-out;       
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../images/LOGO.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: .5;
+            background-position: center center;
+            z-index: 2; 
+            // mix-blend-mode: 
+            animation: animate 5s infinite ease-in-out;       
+        }
+    }
+}
+
+@keyframes loadingRot {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(360deg)
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .tag {
     color: $black4;
     font-family: "Architects Daughter";

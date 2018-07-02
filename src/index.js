@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, HashRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import './assets/scss/App.css';
+import 'animate.css';
 
 import createBrowserHistory from "history/createBrowserHistory";
 import { routes } from './routes'
