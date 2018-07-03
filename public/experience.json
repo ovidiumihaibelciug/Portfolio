@@ -1,0 +1,75 @@
+{
+    "experience": {
+        "story": [
+            {
+                "id": 1,
+                "year": 1999,
+                "text": "I was born",
+                "icon": "child"
+            },
+            {
+                "id": 2,
+                "year": 2014,
+                "text": "I started coding in C++",
+                "icon": "code"
+            },
+            {
+                "id": 3,
+                "year": 2016,
+                "text": "I started learning web development.",
+                "icon": "heart"
+            },
+            {
+                "id": 4,
+                "year": "2018",
+                "text": "Currently looking for a job. :D",
+                "icon": "star"
+            },
+            {
+                "id": 5,
+                "year": "NEXT?",
+                "text": "Wanna work together? Contact me now!",
+                "icon": "comment"
+            }
+        ],
+        "education": [
+            {
+                "id": 1,
+                "title": "FII Practic React Training",
+                "text": "Proiectul FII Practic este o ocazie perfectă de a învaţa într-un mediu prietenos, deoarece nu facilitează doar dezvoltarea profesională a tinerilor pasionaţi de IT, ci şi dezvoltarea personală a lor. Există numeroase avantaje de care participanţii pot beneficia în cadrul acestor sesiuni: stabilirea unui contact cu companii şi traineri, cunoaşterea paşilor pentru clădirea unei cariere de succes, aprofundarea sau învăţarea unor noţiuni esenţiale pentru viitor",
+                "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
+                "url": "https://fiipractic.asii.ro/"
+            },
+            {
+                "id": 2,
+                "title": "FII Practic Javascript Training",
+                "text": "Proiectul FII Practic este o ocazie perfectă de a învaţa într-un mediu prietenos, deoarece nu facilitează doar dezvoltarea profesională a tinerilor pasionaţi de IT, ci şi dezvoltarea personală a lor. Există numeroase avantaje de care participanţii pot beneficia în cadrul acestor sesiuni: stabilirea unui contact cu companii şi traineri, cunoaşterea paşilor pentru clădirea unei cariere de succes, aprofundarea sau învăţarea unor noţiuni esenţiale pentru viitor",
+                "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
+                "url": "https://fiipractic.asii.ro/"
+            },
+            {
+                "id": 3,
+                "title": " Colegiul National \"Garabet Ibraileanu\" Iasi ",
+                "text": "Lorem ipsum dolor situm sadas da sd as d asd a sd as d asdasdasdad asd asda sdasd",
+                "image": "data:image/jpeg;base64,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",
+                "url": "http://cngi.is.edu.ro/"
+            }
+        ],
+        "awards": [
+            {
+                "id": 1,
+                "title": "FII Practic Hackathon - First Place",
+                "text": "Proiectul FII Practic este o ocazie perfectă de a învaţa într-un mediu prietenos, deoarece nu facilitează doar dezvoltarea profesională a tinerilor pasionaţi de IT, ci şi dezvoltarea personală a lor. Există numeroase avantaje de care participanţii pot beneficia în cadrul acestor sesiuni: stabilirea unui contact cu companii şi traineri, cunoaşterea paşilor pentru clădirea unei cariere de succes, aprofundarea sau învăţarea unor noţiuni esenţiale pentru viitor",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2Pv7e-oYuiXcGx7lTeWA7OUie09wxjjdtG3Sv9JktQtaypnzWA",
+                "url": "https://fiipractic.asii.ro/hackathon"
+            },
+            {
+                "id": 2,
+                "title": "IT Marathon - Second place",
+                "text": "Proiectul FII Practic este o ocazie perfectă de a învaţa într-un mediu prietenos, deoarece nu facilitează doar dezvoltarea profesională a tinerilor pasionaţi de IT, ci şi dezvoltarea personală a lor. Există numeroase avantaje de care participanţii pot beneficia în cadrul acestor sesiuni: stabilirea unui contact cu companii şi traineri, cunoaşterea paşilor pentru clădirea unei cariere de succes, aprofundarea sau învăţarea unor noţiuni esenţiale pentru viitor",
+                "image": "http://www.studentiq.ro/img/thumbs/uploads/article/th_lsac_itmarathon_f699f22fe92090522dce572b3504b124.jpg",
+                "url": "http://itmarathon.lsaciasi.ro/web.php"
+            }
+        ]
+    }
+}

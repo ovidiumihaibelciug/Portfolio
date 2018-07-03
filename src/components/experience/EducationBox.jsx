@@ -1,17 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const EducationBox = () => {
+const EducationBox = ({item}) => {
+    const {id, title, image, text, url} = item;
     return (
         <div className="education-box">
-            <div className="education-left-side"></div>
-            <div className="education-right-side">
-                <div className="e-title">
-                    FII Practic React Training
+            <div className="education-left-side" style={{backgroundImage: `url(${image})`}}></div>
+            <a href={url}>
+                <div className="education-right-side">
+                    <div className="e-title">{title}</div>
+                    <div className="e-content">{text}</div>
                 </div>
-                <div className="e-content">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci voluptates? Ipsam totam corporis consequatur laudantium expedita nobis? Ipsam, repellat.
-                </div>
-            </div>
+            </a>
         </div>
     )
 }

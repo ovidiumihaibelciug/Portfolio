@@ -1,14 +1,16 @@
 import React from 'react'
 import EducationBox from './EducationBox';
 
-const Education = () => {
+const Education = ({ education }) => {
     return (
         <div className="education">
             <div className="title">Education</div>
             <div className="education-body">
-                <EducationBox />
-                <EducationBox />
-                <EducationBox />
+                {
+                    education.map(item => {
+                        return <EducationBox item={item} />
+                    })
+                }
             </div>
         </div>
     )

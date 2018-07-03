@@ -5,8 +5,42 @@ import Story from '../../components/experience/Story';
 import Education from '../../components/experience/Education';
 import Awards from '../../components/experience/Awards';
 
+import Loading from '../../components/Loading';
+
+import axios from 'axios';
+
+import { HOST } from '../../utils';
+
 export default class Experience extends Component {
+
+    state = {
+        loading: true,
+        story: {},
+        education: {},
+        awards: {}
+    }
+
+    componentDidMount() {
+
+        axios.get(HOST + 'experience.json')
+            .then(({ data }) => {
+                console.log(data);
+                this.setState({
+                    loading: false,
+                    story: data.experience.story,
+                    education: data.experience.education,
+                    awards: data.experience.awards
+                });
+            })
+            .catch()
+
+        this.setState({
+            loading: true
+        });
+    }
+
     render() {
+        const { loading, story, education, awards } = this.state;
         return (
             <Fragment>
                 <div className="App Experience">
@@ -14,13 +48,17 @@ export default class Experience extends Component {
                         <div className="sidebar">
                             <Navbar />
                         </div>
-                        <div className="content">
-                            <div className="container">
-                                <Story />
-                                <Education />
-                                <Awards />
-                            </div>
-                        </div>
+                        {
+                            loading ? <Loading /> : (
+                                <div className="content">
+                                    <div className="container">
+                                        <Story story={story} />
+                                        <Education education={education}/>
+                                        <Awards awards={awards}/>
+                                    </div>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             </Fragment>

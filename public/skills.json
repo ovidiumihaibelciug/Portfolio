@@ -1,0 +1,77 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "main": "UI Design",
+            "procent": 95,
+            "specific": [
+                {
+                    "id": 1,
+                    "name": "HTML5",
+                    "procent": 99
+                },
+                {
+                    "id": 1,
+                    "name": "CSS3",
+                    "procent": 95
+                },
+                {
+                    "id": 1,
+                    "name": "SCSS",
+                    "procent": 95
+                },
+                {
+                    "id": 1,
+                    "name": "Bootstrap",
+                    "procent": 95
+                },
+                {
+                    "id": 1,
+                    "name": "Bulma, Buefy",
+                    "procent": 95
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "main": "Javascript",
+            "procent": 85,
+            "specific": [
+                {
+                    "id": 1,
+                    "name": "React",
+                    "procent": 85
+                },
+                {
+                    "id": 2,
+                    "name": "Vue",
+                    "procent": 80
+                },
+                {
+                    "id": 3,
+                    "name": "Jquery",
+                    "procent": 90
+                },
+                {
+                    "id": 4,
+                    "name": "Express",
+                    "procent": 65
+                }
+            ]
+
+        },
+        {
+            "id": 3,
+            "main": "PHP",
+            "procent": 85,
+            "specific": [
+                {
+                    "id": 1,
+                    "name": "Laravel",
+                    "procent": 85
+                }
+            ]
+
+        }
+    ]
+}

@@ -5,6 +5,7 @@
   "dependencies": {
     "animate.css": "^3.6.1",
     "animejs": "^2.2.0",
+    "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
     "google-map-react": "^1.0.5",
     "history": "^4.7.2",

@@ -2,14 +2,16 @@ import React from 'react'
 
 import AwardBox from './AwardBox';
 
-const Awards = () => {
+const Awards = ({ awards }) => {
     return (
         <div className="awards">
             <div className="title">Awards</div>
             <div className="awards-body">
-                <AwardBox />
-                <AwardBox />
-                <AwardBox />
+                {
+                    awards.map(item => {
+                        return <AwardBox item={item} />
+                    })
+                }
             </div>
         </div>
     )

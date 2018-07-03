@@ -1,19 +1,24 @@
 import React from 'react'
 
-const AwardsBox = () => {
+const AwardsBox = ({ item }) => {
+
+    const {id, title, image, text, url} = item;
+
     return (
         <div className="awards-box">
-            <div className="awards-left-side">
+            <div className="awards-left-side" style={{backgroundImage: `url(${image})`}}>
                 <i class="fa fa-trophy"></i>
             </div>
-            <div className="awards-right-side">
-                <div className="a-title">
-                    FII Practic React Training
+            <a href={url}>
+                <div className="awards-right-side">
+                    <div className="a-title">
+                        {title}
+                    </div>
+                    <div className="a-content">
+                        {text}
+                    </div>
                 </div>
-                <div className="a-content">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci voluptates? Ipsam totam corporis consequatur laudantium expedita nobis? Ipsam, repellat.
-                </div>
-            </div>
+            </a>
         </div>
     )
 }

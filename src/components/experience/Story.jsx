@@ -2,15 +2,17 @@ import React from 'react'
 
 import Year from './Year';
 
-const Story = () => {
+const Story = ({ story }) => {
     return (
         <div className="evolution">
             <div className="title">My Story so far</div>
             <div className="evolution-body">
                 <div className="exp-circle"></div>
-                <Year />
-                <Year />
-                <Year />
+                {
+                    story.map(event => {
+                        return <Year event={event} len={story.length} />
+                    })
+                }
                 <div className="exp-circle"></div>
             </div>
         </div>

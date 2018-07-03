@@ -8,24 +8,49 @@ import Rellax from 'rellax';
 import RellaxDivs from '../../components/skills/RellaxDivs';
 import Skill from '../../components/skills/Skill';
 
+import Loading from '../../components/Loading';
 
+import {HOST} from '../../utils';
+
+import axios from 'axios';
 
 export default class Skills extends Component {
+
+    state = {
+        loading: true,
+        skills: []
+    }
+
+    componentWillMount() {
+        this.forceUpdate();
+    }
+    
 
     componentDidMount() {
         setInterval(() => {
             this.forceUpdate();
         }, 5000);
 
-        new Rellax('.rellax', {
-            speed: -2,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
-
+        axios.get(HOST + 'skills.json')
+            .then(({data}) => {
+                setTimeout(() => {    
+                    this.setState({
+                        skills: data.skills,
+                        loading: false
+                    }, () => {
+                        new Rellax('.rellax', {
+                            speed: -2,
+                            center: false,
+                            wrapper: null,
+                            round: true,
+                            vertical: true,
+                            horizontal: false
+                        });
+                    });
+                }, 4000);         
+            })
+            .catch(err => console.log(err))
+        
     }
 
     scrollDown = () => {
@@ -34,9 +59,9 @@ export default class Skills extends Component {
         })
     }
 
-
-
     render() {
+        const {loading, skills} = this.state;
+        console.log(skills);
         return (
             <Fragment>
                 <div className="App Skills">
@@ -46,22 +71,26 @@ export default class Skills extends Component {
                         <div className="sidebar">
                             <Navbar style={{ position: "fixed" }} />
                         </div>
-                        <div className="content">
-                            <div className="go-down-btn" onClick={this.scrollDown}>
-                                <i className="fa fa-arrow-down"></i>
-                            </div>
-                            <RellaxDivs />
-                            <div className="container">
-                                <TagSkills />
-                                <div className="skill-points first-row-skills">
-                                    <Skill />
-                                    <Skill />
-                                    <Skill />
-                                    <Skill />
-                                    <Skill />
+                        {
+                            loading ? <Loading /> : (
+                                <div className="content">
+                                    <div className="go-down-btn" onClick={this.scrollDown}>
+                                        <i className="fa fa-arrow-down"></i>
+                                    </div>
+                                    <RellaxDivs />
+                                    <div className="container">
+                                        <TagSkills />
+                                        <div className="skill-points first-row-skills">
+                                            {
+                                                skills.map(skill => {
+                                                    return <Skill key={skill.id} skill={skill} />
+                                                })
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            )
+                        }
                     </div>
                 </div>
             </Fragment>
