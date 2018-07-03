@@ -24,18 +24,50 @@ export default class Projects extends Component {
         const { projects, project } = this.state;
         const id = projects.indexOf(project) != 0 ? projects.indexOf(project) : projects.length;
 
-        this.setState({
-            project: projects[id - 1]
-        });
+
+
+        const div1 = document.querySelector(".project-leftside");
+        const div2 = document.querySelector(".project-rightside");
+
+        div1.classList.add('fadeOut');
+        div2.classList.add('fadeOut');
+        div1.classList.remove('slideInRight');
+        div2.classList.remove('slideInRight');
+
+
+        setTimeout(() => {
+            this.setState({
+                project: projects[id - 1]
+            });
+            div1.classList.remove('slideOutLeft');
+            div1.classList.add('slideInRight');
+            div2.classList.remove('slideOutLeft');
+            div2.classList.add('slideInRight');
+        }, 1000)
     }
 
     nextProject = () => {
         const { projects, project } = this.state;
         const id = projects.indexOf(project) < projects.length - 1 ? projects.indexOf(project) : -1;
 
-        this.setState({
-            project: projects[id + 1]
-        });
+        const div1 = document.querySelector(".project-leftside");
+        const div2 = document.querySelector(".project-rightside");
+
+        div1.classList.add('fadeOut');
+        div2.classList.add('fadeOut');
+        div1.classList.remove('slideInRight');
+        div2.classList.remove('slideInRight');
+
+
+        setTimeout(() => {
+            this.setState({
+                project: projects[id + 1]
+            });
+            div1.classList.remove('slideOutLeft');
+            div1.classList.add('slideInRight');
+            div2.classList.remove('slideOutLeft');
+            div2.classList.add('slideInRight');
+        }, 1000)
     }
 
     render() {

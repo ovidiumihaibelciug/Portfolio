@@ -7,7 +7,7 @@ const Project = ({ project, children }) => {
             <div class="layer"></div>
             <div className="pattern top"></div>
             <div className="pattern right"></div>
-            <div className="project-leftside">
+            <div className="project-leftside animated slideInRight">
                 <div className="project-id"> {id < 9 ? "0" : ""}{id}</div>
                 <div className="project-title">{title}</div>
                 <div className="project-text">{text}</div>
@@ -27,7 +27,7 @@ const Project = ({ project, children }) => {
                     </div>
                 </div>
             </div>
-            <div className="project-rightside">
+            <div className="project-rightside animated slideInRight">
                 <div className="project-image"></div>
                 {children}
             </div>

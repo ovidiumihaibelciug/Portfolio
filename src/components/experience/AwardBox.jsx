@@ -1,11 +1,13 @@
 import React from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 const AwardsBox = ({ item }) => {
 
     const {id, title, image, text, url} = item;
 
     return (
-        <div className="awards-box">
+        <ScrollAnimation className="awards-box" animateIn="fadeIn" animateOut="fadeOut">
             <div className="awards-left-side" style={{backgroundImage: `url(${image})`}}>
                 <i class="fa fa-trophy"></i>
             </div>
@@ -19,7 +21,7 @@ const AwardsBox = ({ item }) => {
                     </div>
                 </div>
             </a>
-        </div>
+        </ScrollAnimation>
     )
 }
 
