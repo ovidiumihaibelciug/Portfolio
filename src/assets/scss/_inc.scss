@@ -68,7 +68,7 @@
     font-size: .8rem;
     font-weight: 600;
     position: absolute;
-    left: 8%;
+    left: 70px;
     cursor: default;
     opacity: .7;
     z-index: 2;
@@ -82,11 +82,11 @@
     }
     &.tag-fragment-start {
         top: 12%;
-        left: 10%;
+        left: 120px;
     }
     &.tag-fragment-end {
         bottom: 12%;
-        left: 10%;
+        left: 120px;
     }
     &.tag-render-end {
         bottom: 7%;

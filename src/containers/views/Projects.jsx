@@ -2,29 +2,38 @@ import React, { Component, Fragment } from 'react';
 
 import Navbar from '../../components/navbar/Navbar';
 
-import { projects } from '../../utils';
-
 import Project from '../../components/Project';
+import Loading from '../../components/Loading';
+
+import axios from 'axios';
+
+import { HOST } from '../../utils';
 
 export default class Projects extends Component {
 
     state = {
         projects: [],
-        project: {}
+        project: {},
+        loading: true
     }
 
-    componentWillMount() {
-        this.setState({
-            projects: projects,
-            project: projects[0]
-        });
+    componentDidMount() {
+
+        axios.get(HOST + 'projects.json')
+            .then(({ data }) => {
+                this.setState({
+                    projects: data.projects,
+                    project: data.projects[0],
+                    loading: false
+                });
+            })
+            .catch(err => console.log(err))
+
     }
 
     prevProject = () => {
         const { projects, project } = this.state;
         const id = projects.indexOf(project) != 0 ? projects.indexOf(project) : projects.length;
-
-
 
         const div1 = document.querySelector(".project-leftside");
         const div2 = document.querySelector(".project-rightside");
@@ -71,7 +80,7 @@ export default class Projects extends Component {
     }
 
     render() {
-        const { project } = this.state;
+        const { project, loading, projects } = this.state;
         return (
             <Fragment>
                 <div className="App Projects">
@@ -79,22 +88,26 @@ export default class Projects extends Component {
                         <div className="sidebar">
                             <Navbar />
                         </div>
-                        <div className="content">
-                            <div className="container">
-                                <div className="projects-list">
-                                    <Project project={project}>
-                                        <div className="project-arrows">
-                                            <div className="arrow-left" onClick={this.prevProject}>
-                                                <i className="fa fa-arrow-left"></i>
-                                            </div>
-                                            <div className="arrow-right" onClick={this.nextProject}>
-                                                <i className="fa fa-arrow-right"></i>
-                                            </div>
+                        {
+                            loading ? <Loading /> : (
+                                <div className="content">
+                                    <div className="container">
+                                        <div className="projects-list">
+                                            <Project project={project}>
+                                                <div className="project-arrows">
+                                                    <div className="arrow-left" onClick={this.prevProject}>
+                                                        <i className="fa fa-arrow-left"></i>
+                                                    </div>
+                                                    <div className="arrow-right" onClick={this.nextProject}>
+                                                        <i className="fa fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </Project>
                                         </div>
-                                    </Project>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            )
+                        }
                     </div>
                 </div>
             </Fragment>

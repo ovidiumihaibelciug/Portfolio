@@ -174,7 +174,12 @@
                         }
                     }
                     .awards-right-side {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
                         .a-title {
+                            height: 100%;
                             margin-top: 3%;
                             margin-bottom: 15px;
                             display: flex;
@@ -184,17 +189,6 @@
                             font-weight: 600;
                             color: rgba($color: white, $alpha: .4);
                             
-                        }
-                        .a-content {
-                            display: flex;
-                            justify-content: center;
-                            color: $black4;
-                            font-weight: 100;
-                            letter-spacing: 1px;
-                            font-size: .9rem;
-                            text-indent: 5px;
-                            margin: 0 20px;
-                            line-height: 1.2rem;
                         }
                     }
                 }

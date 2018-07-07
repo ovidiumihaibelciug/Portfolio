@@ -1,0 +1,49 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Restaurant website",
+            "description": "This is a website for a restaurant.",
+            "code": "https://github.com/ovidiumihaibelciug/restaurant-site",
+            "url": "https://ovidiumihaibelciug.github.io/restaurant-site/#/",
+            "images": ["https://i.imgur.com/15Em4J7.png", "https://i.imgur.com/YfyEKdC.png", "https://i.imgur.com/L4d4BQQ.png", "https://i.imgur.com/L1IHD31.png"],
+            "tags": ["Javascript", "React", "CSS3", "Firebase"]
+        },
+        {
+            "id": 2,
+            "name": "My Pet",
+            "description": "This project was made in 12 hours with my teammate Alex Cambose during ItMarathon. This was a second place winner project that we presented at the end of the hackathon.",
+            "code": "https://github.com/ovidiumihaibelciug/itmarathon2018",
+            "url": "http://shielded-tundra-27316.herokuapp.com",
+            "images": ["https://i.imgur.com/FLLnAQb.png", "https://i.imgur.com/ByTaA3B.png", "https://i.imgur.com/6NC3ysR.png", "https://i.imgur.com/YbYlWFa.png"],
+            "tags": ["PHP", "Laravel", "Vue", "MySQL", "Bulma"]
+        },
+        {
+            "id": 3,
+            "name": "Yoga",
+            "description": "Project that shows clients the transformation of their body. Also you can learn through the lessons, communicate with your coach etc",
+            "code": "https://github.com/ovidiumihaibelciug/itmarathon2018",
+            "url": "yoga.zamira.ro",
+            "images": ["https://i.imgur.com/XOGKq38.png", "https://i.imgur.com/J1JYb8R.png", "https://i.imgur.com/l4eeXqR.png", "https://i.imgur.com/TpmEvpd.png" , "https://i.imgur.com/R5rSUru.png"],
+            "tags": ["PHP", "Javascript", "MySQL", "Bootstrap"]
+        },
+        {
+            "id": 4,
+            "name": "CNGI Biblioteca",
+            "description": "Project made for my highschool. This website stores all books from the highschool's library",
+            "code": "https://github.com/ovidiumihaibelciug/Biblioteca",
+            "url": "http://cngibiblioteca.000webhostapp.com/",
+            "images": ["https://i.imgur.com/KwFmdhH.png", "https://i.imgur.com/5pHapYC.png"],
+            "tags": ["PHP", "PHPExcel"]
+        },
+        {
+            "id": 5,
+            "name": "Blog",
+            "description": "Project made at the end of FiiPractic React. This project is a blog made using react, graphql, mobx and apollo.",
+            "code": "https://github.com/ovidiumihaibelciug/react-blog-fiipractic",
+            "url": "",
+            "images": ["https://i.imgur.com/RIcoFJx.png", "https://i.imgur.com/FM1rKGc.png", "https://i.imgur.com/VS2miN5.png"],
+            "tags": ["React", "GraphQL", "Apollojs", "Material"]
+        }
+    ]
+}

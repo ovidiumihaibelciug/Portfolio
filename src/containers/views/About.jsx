@@ -7,21 +7,29 @@ import Image from '../../components/about/Image';
 
 import Loading from '../../components/Loading';
 
+import { HOST } from '../../utils';
+import axios from 'axios';
+
 export default class About extends Component {
 
     state = {
-        loading: true
+        loading: true,
+        about: ""
     }
 
     componentDidMount() {
-        this.setState({
-            loading: false
-        })
+        axios.get(HOST + 'about.json')
+            .then(({ data }) => {
+                this.setState({
+                    loading: false,
+                    about: data.about
+                })
+            }).catch(err => console.log(err))
     }
 
     render() {
 
-        const { loading } = this.state;
+        const { loading, about } = this.state;
 
         return (
             <Fragment>
@@ -40,7 +48,7 @@ export default class About extends Component {
                                             <TypeAnimation />
                                             <div className="col-md-6 main-about">
                                                 <div className="animated flipInX content-home">
-                                                    <Info />
+                                                    <Info data={about} />
                                                 </div>
                                             </div>
                                             <div className="animated fadeInUpBig col-md-5 img-about">

@@ -435,3 +435,19 @@ h1 {
 	transform: translateX(-50%);
   text-align: center;
 }
+
+.before-text-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .before-text {
+        color: white;
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}

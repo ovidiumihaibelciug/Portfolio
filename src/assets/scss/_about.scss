@@ -1,6 +1,7 @@
 .About {
     height: 100vh !important;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
     .box-design-about {
         height: 100vh;
         width: 100vh;
@@ -18,6 +19,7 @@
         height: 100%;
         .main-about {
             height: 100%;
+            z-index: 5;
             .content-home {
                 height: 100%;
                 display: flex;
@@ -81,4 +83,22 @@
 
 .CircularProgressbar {
     transform: scale(.5);
+}
+
+@media (max-width: 993px) {
+    .About {
+        .container {
+            width: 90%;
+        }
+        .tag {
+            display: none !important;
+        }
+        .image-container {
+            border-radius: 20% !important;
+        }
+        .content-home {
+            flex-direction: row !important;
+            align-items: center;
+        }
+    }
 }

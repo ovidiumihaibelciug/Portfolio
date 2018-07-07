@@ -44,14 +44,15 @@ class Home extends Component {
                         {!loading ? (
                             <div className="content">
                                 <TypeAnimation />
-                                <div className="container">
+                                <div className="container home-container">
                                     <div className="row">
-                                        <div className="animated fadeInUp col-md-6 main-home">
+                                        <div className="animated fadeInUp col-sm-6 col-md-6 main-home">
                                             <Info />
                                         </div>
-                                        <div className="col-md-5 img-home">
+                                        <div className="col-sm-5 col-md-5 img-home">
                                             <Logo />
                                         </div>
+                                        <div className="col-md-1"></div>
                                     </div>
                                 </div>
                             </div>

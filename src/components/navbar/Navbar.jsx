@@ -25,7 +25,7 @@ export default class Navbar extends Component {
         return (
             <section id="navbar" className="navbar">
                 <div className="navbar-item navbar-top">
-                    aa
+
                 </div>
                 <div className="navbar-item navbar-mid">
                     <NavLink to={'/home'} exact={true} activeClassName='actve-item' className="item" data-item="1" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
@@ -54,19 +54,25 @@ export default class Navbar extends Component {
                     </NavLink>
                 </div>
                 <div className="navbar-item navbar-bot">
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/ovidiu-mihai-belciug/">
                         <div className="social-item">
-                            <i className="fa fa-facebook">
+                            <i className="fa fa-linkedin">
                             </i>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/ovidiumihaibelciug">
                         <div className="social-item">
-                            <i className="fa fa-facebook">
+                            <i className="fa fa-github">
                             </i>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="https://www.upwork.com/freelancers/~01680e01c4395543e4">
+                        <div className="social-item">
+                            <i className="fa fa-arrow-up">
+                            </i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/ovidiumihai.belciug">
                         <div className="social-item">
                             <i className="fa fa-facebook">
                             </i>

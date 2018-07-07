@@ -10,7 +10,7 @@ import Skill from '../../components/skills/Skill';
 
 import Loading from '../../components/Loading';
 
-import {HOST} from '../../utils';
+import { HOST } from '../../utils';
 
 import axios from 'axios';
 
@@ -18,13 +18,14 @@ export default class Skills extends Component {
 
     state = {
         loading: true,
-        skills: []
+        skills: [],
+        text: true
     }
 
     componentWillMount() {
         this.forceUpdate();
     }
-    
+
 
     componentDidMount() {
         setInterval(() => {
@@ -32,8 +33,9 @@ export default class Skills extends Component {
         }, 5000);
 
         axios.get(HOST + 'skills.json')
-            .then(({data}) => {
-                setTimeout(() => {    
+            .then(({ data }) => {
+
+                setTimeout(() => {
                     this.setState({
                         skills: data.skills,
                         loading: false
@@ -47,10 +49,15 @@ export default class Skills extends Component {
                             horizontal: false
                         });
                     });
-                }, 4000);         
+                }, 3000);
+                setTimeout(() => {
+                    this.setState({
+                        text: false
+                    })
+                }, 4500)
             })
             .catch(err => console.log(err))
-        
+
     }
 
     scrollDown = () => {
@@ -60,8 +67,7 @@ export default class Skills extends Component {
     }
 
     render() {
-        const {loading, skills} = this.state;
-        console.log(skills);
+        const { loading, skills, text } = this.state;
         return (
             <Fragment>
                 <div className="App Skills">
@@ -72,6 +78,13 @@ export default class Skills extends Component {
                             <Navbar style={{ position: "fixed" }} />
                         </div>
                         {
+                            !loading && text && (
+                                <div className="before-text-container">
+                                    <div className="before-text">I worked with</div>
+                                </div>
+                            )
+                        }
+                        {
                             loading ? <Loading /> : (
                                 <div className="content">
                                     <div className="go-down-btn" onClick={this.scrollDown}>
@@ -79,7 +92,10 @@ export default class Skills extends Component {
                                     </div>
                                     <RellaxDivs />
                                     <div className="container">
-                                        <TagSkills />
+
+                                        {
+                                            !text && <TagSkills />
+                                        }
                                         <div className="skill-points first-row-skills">
                                             {
                                                 skills.map(skill => {

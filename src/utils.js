@@ -171,6 +171,16 @@ export const sskills = [
         name: 'OOP',
         imp: 3
     },
+    {
+        id: 35,
+        name: 'Gulp',
+        imp: 3
+    },
+    {
+        id: 36,
+        name: 'Pug',
+        imp: 3
+    },
 ];
 
 export const projects = [

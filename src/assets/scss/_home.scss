@@ -3,6 +3,7 @@
     height: 100vh;
     .container {
         height: 100%;
+        width: 100%;
         .main-home {
             z-index: 100;
             height: 100%;
@@ -66,8 +67,8 @@
             }
             .img-container {
                 position: absolute;
-                height: 80%;
-                width: 100%;
+                height: 70%;
+                width: 60%;
                 background: url('../images/LOGO.png');
                 background-size: contain;
                 background-position: center center;
@@ -102,6 +103,10 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+}
+
+.home-container {
+    margin: 0 100px;
 }
 
 @keyframes logoRot {
@@ -170,3 +175,36 @@
     }
 }
 
+@media (max-width: 994px) {
+    .main-home {
+        .text-name {
+            font-size: 2.5rem !important;
+            line-height: 2.5rem !important;
+        }
+        .text-title {
+            font-size: .7rem !important;
+        }
+    }
+    .img-home {
+        // position: absolute !important;
+    }
+}
+
+@media (max-width: 794px) {
+    .container {
+        margin: 20px auto;
+    }
+    .main-home {
+        width: 100% !important;
+        margin-left: -15%;
+        margin: 5% auto;
+    }
+    .img-home {
+        position: absolute !important;
+        opacity: .6;
+        width: 50% !important;
+        top: 0;
+        margin-left: -15%;
+        margin-left: 10%;
+    }
+}
