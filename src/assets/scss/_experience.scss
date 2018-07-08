@@ -79,7 +79,7 @@
                 .education-box {
                     margin-top: 30px;
                     width: 80%;
-                    height: 200px;
+                    min-height: 220px;
                     background-color: #303030;
                     display: grid;
                     grid-template-columns: 20% auto;
@@ -142,7 +142,7 @@
                 .awards-box {
                     margin-top: 30px;
                     width: 80%;
-                    height: 200px;
+                    min-height: 220px;
                     background-color: #303030;
                     display: grid;
                     grid-template-columns: 20% auto;
@@ -223,3 +223,37 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .Experience {
+        .content {
+            padding: 0 !important;
+        }
+        .container {
+            width: 100%;
+        }
+        .evolution-body {
+            width: 100vw;
+            transform: scale(.7);
+        }
+        .education {
+            width: 100vw;
+            .education-box {
+                min-height: 200px;
+                width: 98vw !important;
+                .e-title {
+                    font-size: 1.5rem !important;
+                }
+                .e-content {
+                    font-size: .8rem !important;
+                    margin-bottom: 10px;
+                    line-height: 1rem !important;
+                }
+            }
+        }
+        .awards {
+            .a-title {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}

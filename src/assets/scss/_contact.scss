@@ -9,6 +9,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-right: 10px;
                 .contact-title {
                     font-size: 3rem;
                     font-family: Helvetica, sans-serif;
@@ -112,4 +113,14 @@
     width: 50%;
   }
   
-  
+@media (max-width: 700px) {
+    .Contact {
+        .contact-row {
+            flex-direction: column !important;
+        }
+        .left-side {
+            margin-top: 15%;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -69,23 +69,19 @@
                             overflow: hidden; 
                             padding: 0;
                             width: 200%;
-                          
-                          
-                          
-                          
-                          .project-tag {
-                            background: #eee;
-                            border-radius: 3px 0 0 3px;
-                            color: #999;
-                            display: inline-block;
-                            height: 26px;
-                            line-height: 26px;
-                            padding: 0 20px 0 23px;
-                            position: relative;
-                            margin: 0 10px 10px 0;
-                            text-decoration: none;
-                            -webkit-transition: color 0.2s;
-                          }
+                            .project-tag {
+                                background: #eee;
+                                border-radius: 3px 0 0 3px;
+                                color: #999;
+                                display: inline-block;
+                                height: 26px;
+                                line-height: 26px;
+                                padding: 0 20px 0 23px;
+                                position: relative;
+                                margin: 0 10px 10px 0;
+                                text-decoration: none;
+                                -webkit-transition: color 0.2s;
+                            }
                           
                           .project-tag::before {
                             background-color: rgba(#004e74, .80);
@@ -221,4 +217,22 @@
     width: 100%;
     height: 100%;
     border-bottom-left-radius: 70px;
+}
+
+@media (max-width: 880px) {
+    .Projects {
+        .project {
+            margin-top: 10% !important;
+            transform: scale(.8);
+            width: 90vw !important;
+            height: 100vh !important;
+            .project-text {
+                font-size: 1rem !important;
+                line-height: 1rem !important;
+            }
+        }
+    }
+    .container {
+        width: 100vw;
+    }
 }

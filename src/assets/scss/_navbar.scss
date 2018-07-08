@@ -97,8 +97,95 @@
                 animation: animate 5s infinite ease-in-out;       
             }
         }
+        &.navbar-hamburger {
+            display: none;
+
+        }
     }
 }
 .sidebar {
     z-index: 4;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 100vw !important;
+        height: 60px !important;
+    }
+    #navbar {
+        grid-template-columns: 10% 70% auto !important;
+        grid-template-rows: 100% !important;
+        .navbar-item {
+            align-items: center;
+            &.navbar-mid {
+                flex-direction: row !important;
+            }
+            &.navbar-bot {
+                flex-direction: row !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        z-index: 5;
+        display: flex !important;
+        // grid-template-columns: 100% !important;
+        justify-content: space-between !important;
+        .navbar-item {
+            &.navbar-hamburger {
+                display: flex;
+                color: $black4;
+                font-size: 1.4rem;
+                margin-right: 30px;
+                padding: 10px;
+            }
+            &.navbar-top {
+                height: 90%;
+                width: 50px;
+                margin-left: 30px;
+            }
+            &.navbar-mid, &.navbar-bot {
+                display: none;
+            }
+        }
+    }
+    .navbar-mobile {
+        width: 100vw;
+        height: calc(100vh - 50px);
+        z-index: 3;
+        background-color: $black2;
+        display: grid;
+        grid-template-rows: 80% 20%;
+        .navbar-mobile-main {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                // padding: 10% 0;
+                font-size: 1.5rem;
+                color: $black4;
+                .item-text {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        .navbar-mobile-social {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: $blue;
+        }
+    }
 }
