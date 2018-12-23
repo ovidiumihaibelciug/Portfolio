@@ -24,7 +24,6 @@ export default class Experience extends Component {
     axios
       .get(HOST + 'experience.json')
       .then(({ data }) => {
-        console.log(data);
         this.setState({
           loading: false,
           story: data.experience.story,

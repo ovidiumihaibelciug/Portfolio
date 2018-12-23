@@ -7,6 +7,7 @@
     "animejs": "^2.2.0",
     "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.0.1",
     "google-map-react": "^1.0.5",
     "history": "^4.7.2",
     "node-sass-chokidar": "^1.3.0",
@@ -25,6 +26,8 @@
     "rellax": "^1.6.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
