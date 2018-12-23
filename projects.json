@@ -23,7 +23,7 @@
             "name": "Yoga",
             "description": "Project that shows clients the transformation of their body. Also you can learn through the lessons, communicate with your coach etc",
             "code": "https://github.com/ovidiumihaibelciug/itmarathon2018",
-            "url": "https://yoga-project2.herokuapp.com",
+            "url": "yoga.zamira.ro",
             "images": ["https://i.imgur.com/XOGKq38.png", "https://i.imgur.com/J1JYb8R.png", "https://i.imgur.com/l4eeXqR.png", "https://i.imgur.com/TpmEvpd.png" , "https://i.imgur.com/R5rSUru.png"],
             "tags": ["PHP", "Javascript", "MySQL", "Bootstrap"]
         },
