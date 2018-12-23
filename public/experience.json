@@ -1,66 +1,84 @@
 {
-    "experience": {
-        "story": [
-            {
-                "id": 1,
-                "year": 1999,
-                "text": "I was born",
-                "icon": "child"
-            },
-            {
-                "id": 2,
-                "year": 2014,
-                "text": "I started coding in C++",
-                "icon": "code"
-            },
-            {
-                "id": 3,
-                "year": 2017,
-                "text": "I started learning web development.",
-                "icon": "heart"
-            },
-            {
-                "id": 4,
-                "year": "2018",
-                "text": "Currently looking for a job. :D",
-                "icon": "star"
-            },
-            {
-                "id": 5,
-                "year": "NEXT?",
-                "text": "Wanna work together? Contact me now!",
-                "icon": "comment"
-            }
-        ],
-        "education": [
-            {
-                "id": 1,
-                "title": "FII Practic React Training",
-                "text": "The FII Practic project is a perfect opportunity to learn in a friendly environment because it not only facilitates the professional development of young IT enthusiasts but also their personal development. There are many advantages that participants can benefit from in these sessions: establishing contact with companies and trainers, learning the steps to building a successful career, deepening or learning some key concepts for the future. I highly recommend it",
-                "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
-                "url": "https://fiipractic.asii.ro/"
-            },
-            {
-                "id": 2,
-                "title": "FII Practic Javascript Training",
-                "text": "The FII Practic project is a perfect opportunity to learn in a friendly environment because it not only facilitates the professional development of young IT enthusiasts but also their personal development. There are many advantages that participants can benefit from in these sessions: establishing contact with companies and trainers, learning the steps to building a successful career, deepening or learning some key concepts for the future. I highly recommend it",
-                "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
-                "url": "https://fiipractic.asii.ro/"
-            } 
-        ],
-        "awards": [
-            {
-                "id": 1,
-                "title": "FII Practic Hackathon - First Place",
-                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2Pv7e-oYuiXcGx7lTeWA7OUie09wxjjdtG3Sv9JktQtaypnzWA",
-                "url": "https://fiipractic.asii.ro/hackathon"
-            },
-            {
-                "id": 2,
-                "title": "IT Marathon - Second place",
-                "image": "http://www.studentiq.ro/img/thumbs/uploads/article/th_lsac_itmarathon_f699f22fe92090522dce572b3504b124.jpg",
-                "url": "http://itmarathon.lsaciasi.ro/web.php"
-            }
-        ]
-    }
+  "experience": {
+    "story": [
+      {
+        "id": 1,
+        "year": 1999,
+        "text": "I was born",
+        "icon": "child"
+      },
+      {
+        "id": 2,
+        "year": 2014,
+        "text": "I started coding in C++",
+        "icon": "code"
+      },
+      {
+        "id": 3,
+        "year": 2017,
+        "text": "I started learning web development.",
+        "icon": "heart"
+      },
+      {
+        "id": 4,
+        "year": "2018",
+        "text": "Full-Stack Developer at Cult of Coders",
+        "icon": "star"
+      },
+      {
+        "id": 5,
+        "year": "NEXT?",
+        "text": "Wanna work together? Contact me now!",
+        "icon": "comment"
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "title": "FII Practic React Training",
+        "text": "The FII Practic project is a perfect opportunity to learn in a friendly environment because it not only facilitates the professional development of young IT enthusiasts but also their personal development. There are many advantages that participants can benefit from in these sessions: establishing contact with companies and trainers, learning the steps to building a successful career, deepening or learning some key concepts for the future. I highly recommend it",
+        "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
+        "url": "https://fiipractic.asii.ro/"
+      },
+      {
+        "id": 2,
+        "title": "FII Practic Javascript Training",
+        "text": "The FII Practic project is a perfect opportunity to learn in a friendly environment because it not only facilitates the professional development of young IT enthusiasts but also their personal development. There are many advantages that participants can benefit from in these sessions: establishing contact with companies and trainers, learning the steps to building a successful career, deepening or learning some key concepts for the future. I highly recommend it",
+        "image": "https://i2.wp.com/neataiasi.ro/wp-content/uploads/2014/01/988431_611654135548498_1079519549_n.jpg?fit=375%2C375&ssl=1",
+        "url": "https://fiipractic.asii.ro/"
+      }
+    ],
+    "awards": [
+      {
+        "id": 1,
+        "title": "FII Practic Hackathon - First Place",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2Pv7e-oYuiXcGx7lTeWA7OUie09wxjjdtG3Sv9JktQtaypnzWA",
+        "url": "https://fiipractic.asii.ro/hackathon"
+      },
+      {
+        "id": 2,
+        "title": "IT Marathon - Second place",
+        "image": "http://www.studentiq.ro/img/thumbs/uploads/article/th_lsac_itmarathon_f699f22fe92090522dce572b3504b124.jpg",
+        "url": "http://itmarathon.lsaciasi.ro/web.php"
+      }
+    ],
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Freelancer",
+        "startedAt": "June 2017",
+        "description": "Development/deployment of websites made in: React, php, html&css etc.",
+        "image": "https://pakwired.com/wp-content/uploads/2017/10/Freelancer-No-credit.jpg",
+        "url": "https://www.upwork.com/freelancers/~01680e01c4395543e4"
+      },
+      {
+        "id": 2,
+        "title": "Full Stack developer at Cult of Coders",
+        "startedAt": "July 2018",
+        "description": "Cult of Coders is a web development company founded by Theodor Diaconu and Claudiu Roman in 2015. Our company is entirely focusing on developing web / mobile applications using the Meteor framework. So far, we have built tools such as Grapher / Redis that are used in hundreds of web applications.",
+        "image": "https://www.cultofcoders.com/assets/img/placeholder-cult-of-coders.jpg",
+        "url": "https://www.cultofcoders.com/"
+      }
+    ]
+  }
 }
