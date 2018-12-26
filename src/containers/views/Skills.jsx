@@ -13,103 +13,93 @@ import Loading from '../../components/Loading';
 import { HOST } from '../../utils';
 
 import axios from 'axios';
+import { skills } from '../../data';
 
 export default class Skills extends Component {
+  state = {
+    loading: true,
+    skills: [],
+    text: true,
+  };
 
-    state = {
-        loading: true,
-        skills: [],
-        text: true
-    }
+  componentWillMount() {
+    this.forceUpdate();
+  }
 
-    componentWillMount() {
-        this.forceUpdate();
-    }
+  componentDidMount() {
+    setInterval(() => {
+      this.forceUpdate();
+    }, 5000);
+    setTimeout(() => {
+      this.setState(
+        {
+          skills,
+          loading: false,
+        },
+        () => {
+          new Rellax('.rellax', {
+            speed: -2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false,
+          });
+        }
+      );
+    }, 3000);
+    setTimeout(() => {
+      this.setState({
+        text: false,
+      });
+    }, 4500);
+  }
 
+  scrollDown = () => {
+    document.querySelector('.first-row-skills').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
 
-    componentDidMount() {
-        setInterval(() => {
-            this.forceUpdate();
-        }, 5000);
-
-        axios.get(HOST + 'skills.json')
-            .then(({ data }) => {
-
-                setTimeout(() => {
-                    this.setState({
-                        skills: data.skills,
-                        loading: false
-                    }, () => {
-                        new Rellax('.rellax', {
-                            speed: -2,
-                            center: false,
-                            wrapper: null,
-                            round: true,
-                            vertical: true,
-                            horizontal: false
-                        });
-                    });
-                }, 3000);
-                setTimeout(() => {
-                    this.setState({
-                        text: false
-                    })
-                }, 4500)
-            })
-            .catch(err => console.log(err))
-
-    }
-
-    scrollDown = () => {
-        document.querySelector('.first-row-skills').scrollIntoView({
-            behavior: 'smooth', block: "start", inline: "nearest"
-        })
-    }
-
-    render() {
-        const { loading, skills, text } = this.state;
-        return (
-            <Fragment>
-                <div className="App Skills">
-                    <div className="line line-left"></div>
-                    <div className="line line-right"></div>
-                    <div className="row">
-                        <div className="sidebar">
-                            <Navbar style={{ position: "fixed" }} />
-                        </div>
-                        {
-                            !loading && text && (
-                                <div className="before-text-container">
-                                    <div className="before-text">I worked with</div>
-                                </div>
-                            )
-                        }
-                        {
-                            loading ? <Loading /> : (
-                                <div className="content">
-                                    <div className="go-down-btn" onClick={this.scrollDown}>
-                                        <i className="fa fa-arrow-down"></i>
-                                    </div>
-                                    <RellaxDivs />
-                                    <div className="container">
-
-                                        {
-                                            !text && <TagSkills />
-                                        }
-                                        <div className="skill-points first-row-skills">
-                                            {
-                                                skills.map(skill => {
-                                                    return <Skill key={skill.id} skill={skill} />
-                                                })
-                                            }
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        }
-                    </div>
+  render() {
+    const { loading, skills, text } = this.state;
+    return (
+      <Fragment>
+        <div className="App Skills">
+          <div className="line line-left" />
+          <div className="line line-right" />
+          <div className="row">
+            <div className="sidebar">
+              <Navbar style={{ position: 'fixed' }} />
+            </div>
+            {!loading && text && (
+              <div className="before-text-container">
+                <div className="before-text">I worked with</div>
+              </div>
+            )}
+            {loading ? (
+              <Loading />
+            ) : (
+              <div className="content">
+                <div className="go-down-btn" onClick={this.scrollDown}>
+                  <i className="fa fa-arrow-down" />
                 </div>
-            </Fragment>
-        )
-    }
+                <RellaxDivs />
+                <div className="container">
+                  {!text && <TagSkills />}
+                  <div className="skill-points first-row-skills">
+                    {skills.map(skill => {
+                      return <Skill key={skill.id} skill={skill} />;
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
 }

@@ -8,9 +8,7 @@ import Jobs from '../../components/experience/Jobs';
 
 import Loading from '../../components/Loading';
 
-import axios from 'axios';
-
-import { HOST } from '../../utils';
+import { experience } from '../../data';
 
 export default class Experience extends Component {
   state = {
@@ -21,22 +19,15 @@ export default class Experience extends Component {
   };
 
   componentDidMount() {
-    axios
-      .get(HOST + 'experience.json')
-      .then(({ data }) => {
-        this.setState({
-          loading: false,
-          story: data.experience.story,
-          education: data.experience.education,
-          awards: data.experience.awards,
-          jobs: data.experience.jobs,
-        });
-      })
-      .catch();
-
-    this.setState({
-      loading: true,
-    });
+    setTimeout(() => {
+      this.setState({
+        loading: false,
+        story: experience.story,
+        education: experience.education,
+        awards: experience.awards,
+        jobs: experience.jobs,
+      });
+    }, 500);
   }
 
   render() {

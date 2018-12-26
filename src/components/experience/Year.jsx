@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Year = ({ event, len }) => {
     const { id, year, text, icon } = event;
-    console.log(event.length);
+
     return (
         <React.Fragment>
             {
