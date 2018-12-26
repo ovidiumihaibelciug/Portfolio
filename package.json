@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ovidiumihaibelciug.github.io/Portfolio",
   "dependencies": {
     "animate.css": "^3.6.1",
     "animejs": "^2.2.0",
