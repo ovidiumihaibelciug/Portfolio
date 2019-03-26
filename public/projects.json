@@ -2,6 +2,14 @@
     "projects": [
         {
             "id": 1,
+            "name": "My Manga Anime List - mymanganimelist.com",
+            "description": "My Manga Anime List is a website which offers users information regarding anything anime-related. The site also contains streaming features, discussion forums, and character wikis. It's using server-side rendering and SEO best practices",
+            "url": "mymanganimelist.com",
+            "images": ["https://i.imgur.com/15Em4J7.png", "https://i.imgur.com/YfyEKdC.png", "https://i.imgur.com/L4d4BQQ.png", "https://i.imgur.com/L1IHD31.png"],
+            "tags": ["Next.js", "React", "Sass", "Seo", "ssr"]
+        },
+        {
+            "id": 3,
             "name": "Restaurant website",
             "description": "This is a website for a restaurant.",
             "code": "https://github.com/ovidiumihaibelciug/restaurant-site",
@@ -10,7 +18,7 @@
             "tags": ["Javascript", "React", "CSS3", "Firebase"]
         },
         {
-            "id": 2,
+            "id": 4,
             "name": "My Pet",
             "description": "This project was made in 12 hours with my teammate Alex Cambose during ItMarathon. This was a second place winner project that we presented at the end of the hackathon.",
             "code": "https://github.com/ovidiumihaibelciug/itmarathon2018",
@@ -19,7 +27,7 @@
             "tags": ["PHP", "Laravel", "Vue", "MySQL", "Bulma"]
         },
         {
-            "id": 3,
+            "id": 5,
             "name": "Yoga",
             "description": "Project that shows clients the transformation of their body. Also you can learn through the lessons, communicate with your coach etc",
             "code": "https://github.com/ovidiumihaibelciug/itmarathon2018",
@@ -28,7 +36,7 @@
             "tags": ["PHP", "Javascript", "MySQL", "Bootstrap"]
         },
         {
-            "id": 4,
+            "id": 6,
             "name": "CNGI Biblioteca",
             "description": "Project made for my highschool. This website stores all books from the highschool's library",
             "code": "https://github.com/ovidiumihaibelciug/Biblioteca",

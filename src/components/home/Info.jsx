@@ -8,7 +8,7 @@ const Info = () => {
                 Hello,<br /> I'm <span className="text-username">Ovi</span>diu-Mihai Belciug,<br /> Web Developer.
             </div>
             <div className="text-title">
-                React / Laravel / Vue
+                React / Next.js / GraphQL
             </div>
             <div className="contact-btn">
                 <Link to="/contact">Contact me</Link>

@@ -5,8 +5,6 @@ import Navbar from '../../components/navbar/Navbar';
 import Project from '../../components/Project';
 import Loading from '../../components/Loading';
 
-import { HOST } from '../../utils';
-
 import { projects } from '../../data';
 
 export default class Projects extends Component {

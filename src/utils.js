@@ -9,7 +9,7 @@ export const sskills = [
   {
     id: 2,
     name: 'PHP',
-    imp: 1,
+    imp: 2,
   },
   {
     id: 3,
@@ -17,9 +17,34 @@ export const sskills = [
     imp: 1,
   },
   {
+    id: 50,
+    name: 'Next.js',
+    imp: 2,
+  },
+  {
+    id: 51,
+    name: 'Gatsby.js',
+    imp: 2,
+  },
+  {
+    id: 53,
+    name: 'Redux',
+    imp: 2,
+  },
+  {
+    id: 54,
+    name: 'Mobx',
+    imp: 3,
+  },
+  {
+    id: 52,
+    name: 'ssr',
+    imp: 2,
+  },
+  {
     id: 4,
     name: 'Laravel',
-    imp: 1,
+    imp: 2,
   },
   {
     id: 5,
@@ -84,11 +109,6 @@ export const sskills = [
   {
     id: 17,
     name: 'Apollo',
-    imp: 3,
-  },
-  {
-    id: 18,
-    name: 'Full Stack',
     imp: 2,
   },
   {
@@ -184,7 +204,7 @@ export const sskills = [
   {
     id: 37,
     name: 'Meteor',
-    imp: 1,
+    imp: 2,
   },
   {
     id: 38,

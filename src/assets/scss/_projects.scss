@@ -25,13 +25,25 @@
                 -webkit-box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.75);
                 -moz-box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.75);
                 box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.75);
+                @include breakpoint('to-tablet-p') {
+                    flex-direction: column;
+                    padding: 30px;
+                    height: auto;
+
+                }
                 .project-leftside {
                     flex: 3;
                     margin-right: 40px;
                     // padding-right: 50px;
                     display: grid;
                     grid-template-rows: 25% 15% 35% 10% auto;
-                    z-index: 10;                                
+                    z-index: 10;
+                    @include breakpoint('phone') {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
                     .project-id {
                         font-size: 6rem;
                         color: white;
@@ -69,6 +81,9 @@
                             overflow: hidden; 
                             padding: 0;
                             width: 200%;
+                            @include breakpoint('phone') {
+                                width: auto;
+                            }
                             .project-tag {
                                 background: #eee;
                                 border-radius: 3px 0 0 3px;
@@ -150,6 +165,9 @@
                 .project-rightside {
                     flex: 2;
                     position: relative;
+                    @include breakpoint('phone') {
+                        flex: 1;
+                    }
                     .project-image {
                         position: absolute;
                         min-height: 70%;
@@ -158,8 +176,11 @@
                         background-size: cover;
                         background-repeat: no-repeat;
                         top: calc(-50px - 7%);
-                        left: -50px;
+                        left: -40px;
                         border: 5px solid white;
+                        @include breakpoint('to-tablet-p') {
+                            display: none;
+                        }
                     }
                     .project-arrows {
                         position: absolute;
@@ -219,7 +240,7 @@
     border-bottom-left-radius: 70px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1200px) {
     .Projects {
         .project {
             margin-top: 10% !important;

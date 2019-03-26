@@ -99,20 +99,43 @@ export const experience = {
 export const projects = [
   {
     id: 1,
-    name: 'Restaurant website',
-    description: 'This is a website for a restaurant.',
-    code: 'https://github.com/ovidiumihaibelciug/restaurant-site',
-    url: 'https://ovidiumihaibelciug.github.io/restaurant-site/#/',
+    name: 'My Manga Anime List - mymanganimelist.com',
+    description: "My Manga Anime List is a website which offers users information regarding anything anime-related. The site also contains streaming features, discussion forums, and character wikis. It's using server-side rendering and SEO best practices.",
+    url: 'http://mymanganimelist.com?ref=portfolio',
     images: [
-      'https://i.imgur.com/15Em4J7.png',
-      'https://i.imgur.com/YfyEKdC.png',
-      'https://i.imgur.com/L4d4BQQ.png',
-      'https://i.imgur.com/L1IHD31.png',
+      'https://i.imgur.com/ZmZQ2pT.png',
+      'https://i.imgur.com/By1G6La.png',
+      'https://i.imgur.com/7ehZrFR.png',
+      'https://i.imgur.com/qeQSvDi.png',
     ],
-    tags: ['Javascript', 'React', 'CSS3', 'Firebase'],
+    tags: ['Next.js', 'React', 'Sass', 'server-side rendering', 'SEO'],
   },
   {
     id: 2,
+    name: 'Studeo',
+    description: "An e-learning platform to help students learn faster and easier for exams. Contribuitors: Alexandru Cambose",
+    code: 'https://github.com/alexcambose/studeo',
+    images: [
+      'https://i.imgur.com/1XzCLvZ.png',
+      'https://i.imgur.com/PsGAMYf.png',
+      'https://i.imgur.com/DzgiMgK.jpg',
+      'https://i.imgur.com/U6QbWeo.png',
+    ],
+    tags: ['Laravel', 'PHP', 'Javascript', 'Vue.js', 'Bulma', "MySQL"],
+  },
+  {
+    id: 3,
+    name: 'Youtube Song Repeat - ytsongrepeat.com',
+    description: 'A PWA that repeats a song from youtube. Also it shows details about the song and recommendations',
+    url: 'ytsongrepeat.com?ref=portfolio',
+    images: [
+      'https://i.imgur.com/orqu6kB.png',
+      'https://i.imgur.com/HLxsimQ.png',
+    ],
+    tags: ['Gatsby.js', 'Javascript', 'Sass', 'GraphQL'],
+  },
+  {
+    id: 3,
     name: 'My Pet',
     description:
       'This project was made in 12 hours with my teammate Alex Cambose during ItMarathon. This was a second place winner project that we presented at the end of the hackathon.',
@@ -127,11 +150,10 @@ export const projects = [
     tags: ['PHP', 'Laravel', 'Vue', 'MySQL', 'Bulma'],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Yoga',
     description:
       'Project that shows clients the transformation of their body. Also you can learn through the lessons, communicate with your coach etc',
-    code: 'https://github.com/ovidiumihaibelciug/itmarathon2018',
     url: 'yoga.zamira.ro',
     images: [
       'https://i.imgur.com/XOGKq38.png',
@@ -143,7 +165,7 @@ export const projects = [
     tags: ['PHP', 'Javascript', 'MySQL', 'Bootstrap'],
   },
   {
-    id: 4,
+    id: 5,
     name: 'CNGI Biblioteca',
     description:
       "Project made for my highschool. This website stores all books from the highschool's library",
@@ -156,7 +178,7 @@ export const projects = [
     tags: ['PHP', 'PHPExcel'],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Blog',
     description:
       'Project made at the end of FiiPractic React. This project is a blog made using react, graphql, mobx and apollo.',
@@ -236,8 +258,18 @@ export const skills = [
       },
       {
         id: 5,
+        name: 'Next.js',
+        procent: 80,
+      },
+      {
+        id: 6,
+        name: 'Gatsby.js',
+        procent: 70,
+      },
+      {
+        id: 7,
         name: 'Express',
-        procent: 65,
+        procent: 50,
       },
     ],
   },

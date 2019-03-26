@@ -34,7 +34,7 @@ export default class Navbar extends Component {
 
                     </div>
                     <div className="navbar-item navbar-mid">
-                        <NavLink to={'/home'} exact={true} activeClassName='actve-item' className="item" data-item="1" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
+                        <NavLink to={'/home?skip=true'} exact={true} activeClassName='actve-item' className="item" data-item="1" onMouseOver={this.handleOverEvent} onMouseLeave={this.handleLeaveEvent}>
                             <i className="navbar-icon centered fa fa-home" data-item="1"></i>
                             <div className="item-text hide" data-item="1">Home</div>
                         </NavLink>

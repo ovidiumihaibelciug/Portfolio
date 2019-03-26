@@ -8,6 +8,9 @@
             margin-bottom: 50px;
             margin-left: 15%;
             margin-top: 10%;
+            @include breakpoint('to-tablet-p') {
+              flex-direction: column;
+            }
             .left-side {
                 flex: 1;
                 display: flex;
