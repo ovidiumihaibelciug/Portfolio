@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, HashRouter } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
 import './assets/scss/App.css';
 import 'animate.css';
 
@@ -20,4 +19,3 @@ ReactDOM.render(
         </React.Fragment>
     </HashRouter>, document.getElementById('root')
 );
-registerServiceWorker();

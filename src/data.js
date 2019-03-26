@@ -135,7 +135,7 @@ export const projects = [
     tags: ['Gatsby.js', 'Javascript', 'Sass', 'GraphQL'],
   },
   {
-    id: 3,
+    id: 4,
     name: 'My Pet',
     description:
       'This project was made in 12 hours with my teammate Alex Cambose during ItMarathon. This was a second place winner project that we presented at the end of the hackathon.',
@@ -150,7 +150,7 @@ export const projects = [
     tags: ['PHP', 'Laravel', 'Vue', 'MySQL', 'Bulma'],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Yoga',
     description:
       'Project that shows clients the transformation of their body. Also you can learn through the lessons, communicate with your coach etc',
@@ -165,7 +165,7 @@ export const projects = [
     tags: ['PHP', 'Javascript', 'MySQL', 'Bootstrap'],
   },
   {
-    id: 5,
+    id: 6,
     name: 'CNGI Biblioteca',
     description:
       "Project made for my highschool. This website stores all books from the highschool's library",
@@ -178,7 +178,7 @@ export const projects = [
     tags: ['PHP', 'PHPExcel'],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Blog',
     description:
       'Project made at the end of FiiPractic React. This project is a blog made using react, graphql, mobx and apollo.',

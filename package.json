@@ -24,7 +24,7 @@
     "react-dom": "^16.4.0",
     "react-particles-js": "^2.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^2.1.8",
     "react-tag-cloud": "^1.1.2",
     "rellax": "^1.6.2"
   },
@@ -39,5 +39,11 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
