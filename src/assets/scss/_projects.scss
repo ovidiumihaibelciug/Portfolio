@@ -197,9 +197,9 @@
                         right: 50px;
                         display: flex;
                         @include breakpoint('phone') {
-                        right: 0;
+                            right: 0;
                         }
-                            .arrow-left, .arrow-right {
+                        .arrow-left, .arrow-right {
                             .fa {
                                 padding: 10px;
                                 color: rgba(#005884, 0.7);

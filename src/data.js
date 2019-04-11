@@ -102,6 +102,7 @@ export const projects = [
     name: 'My Manga Anime List - mymanganimelist.com',
     description: "My Manga Anime List is a website which offers users information regarding anything anime-related. The site also contains streaming features, discussion forums, and character wikis. It's using server-side rendering and SEO best practices.",
     url: 'http://mymanganimelist.com?ref=portfolio',
+    code: 'https://github.com/ovidiumihaibelciug/mymanganimelist.com',
     images: [
       'https://i.imgur.com/ZmZQ2pT.png',
       'https://i.imgur.com/By1G6La.png',
